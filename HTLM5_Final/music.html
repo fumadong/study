@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" /><!--CSS RESET-->
+	<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css"><!--演示页面样式，使用时可以不引用-->
+	<link rel="stylesheet" type="text/css" href="./dist/css/main.min.css">
+	<style>
+      .htmleaf-content { height: 600px; }
+
+      .htmleaf-content {
+          margin: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #F8FFAE;
+          background: -webkit-linear-gradient(-65deg, #43C6AC, #F8FFAE);
+          background: linear-gradient(-65deg, #43C6AC, #F8FFAE);
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+      }
+  </style>
+</head>
+<body>
+	<div class="htmleaf-container">
+		<header class="htmleaf-header">
+			<h1>HTML5迷你音频播放器插件 <span>Audio Player javascript library</span></h1>
+			
+		</header>
+		<div class="htmleaf-content">
+			<div class="ready-player-1">
+	        <audio crossorigin>
+	            <source src="audio/example-2.mp3" type="audio/mpeg">
+	        </audio>
+	    </div>
+		</div>
+	
+	
+	</div>
+	
+	<script src="./dist/js/app.js"></script>
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          new GreenAudioPlayer('.ready-player-1');
+      });
+  </script>
+</body>
+</html>
